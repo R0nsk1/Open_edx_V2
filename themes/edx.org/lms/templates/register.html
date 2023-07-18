@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #11155c;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #11155c;
+    }
+
+    h4 {
+      font-size: 14px;
+      color: #11155c;
+    }
+
+    a {
+      color: #11155c;
+      text-decoration: none;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #11155c;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .additional-info {
+      display: none;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #3429ca;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #11155c;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #f5f5f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #11155c;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  </style>
+  <script>
+    function toggleAdditionalInfo() {
+      var additionalInfoCheckbox = document.getElementById("additionalInfo");
+      var additionalInfoContainer = document.getElementById("additionalInfoContainer");
+      additionalInfoContainer.style.display = additionalInfoCheckbox.checked ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <h2>Already have a Cloudswyft account? <a href="sign.html">Sign in.</a></h2> 
+  
+  <form action="#" method="post">
+    <h3>Create an Account</h3>
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" required>
+    
+    <label for="username">Public Username</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="country">Country or Region of Residence</label>
+    <select id="country" name="country" required>
+      <option value="conuntryselect">Select Country</option>
+      <option value="afghanistan">Afghanistan</option>
+      <option value="albania">Albania</option>
+      <option value="algeria">Algeria</option>
+      <option value="andorra">Andorra</option>
+      <option value="angola">Angola</option>
+      <option value="argentina">Argentina</option>
+      <option value="australia">Australia</option>
+      <option value="austria">Austria</option>
+      <option value="bangladesh">Bangladesh</option>
+      <option value="belgium">Belgium</option>
+      <option value="brazil">Brazil</option>
+      <option value="bulgaria">Bulgaria</option>
+      <option value="canada">Canada</option>
+      <option value="chile">Chile</option>
+      <option value="china">China</option>
+      <option value="colombia">Colombia</option>
+      <option value="croatia">Croatia</option>
+      <option value="cuba">Cuba</option>
+      <option value="cyprus">Cyprus</option>
+      <option value="czech-republic">Czech Republic</option>
+      <option value="denmark">Denmark</option>
+      <option value="egypt">Egypt</option>
+      <option value="estonia">Estonia</option>
+      <option value="finland">Finland</option>
+      <option value="france">France</option>
+      <option value="germany">Germany</option>
+      <option value="greece">Greece</option>
+      <option value="hungary">Hungary</option>
+      <option value="iceland">Iceland</option>
+      <option value="india">India</option>
+      <option value="indonesia">Indonesia</option>
+      <option value="iran">Iran</option>
+      <option value="ireland">Ireland</option>
+      <option value="italy">Italy</option>
+      <option value="japan">Japan</option>
+      <option value="kenya">Kenya</option>
+      <option value="korea">Korea</option>
+      <option value="lebanon">Lebanon</option>
+      <option value="malaysia">Malaysia</option>
+      <option value="mexico">Mexico</option>
+      <option value="netherlands">Netherlands</option>
+      <option value="new-zealand">New Zealand</option>
+      <option value="norway">Norway</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="peru">Peru</option>
+      <option value="philippines">Philippines</option>
+      <option value="poland">Poland</option>
+      <option value="portugal">Portugal</option>
+      <option value="romania">Romania</option>
+      <option value="russia">Russia</option>
+      <option value="saudi-arabia">Saudi Arabia</option>
+      <option value="singapore">Singapore</option>
+      <option value="south-africa">South Africa</option>
+      <option value="spain">Spain</option>
+      <option value="sweden">Sweden</option>
+      <option value="switzerland">Switzerland</option>
+      <option value="thailand">Thailand</option>
+      <option value="turkey">Turkey</option>
+      <option value="united-kingdom">United Kingdom</option>
+      <option value="united-states">United States</option>
+    </select>
+    
+    <p>
+      <label for="agreeToTerms">
+        By creating an account, you agree to the <a href="pagenotfound.html">Terms of Service and Honor Code</a> and you acknowledge that Ron and Friends and each Member process your personal data in accordance with the <a href="dashboard.html">Privacy Policy</a>.
+      </label>
+    </p>
+    
+    <h4>
+      <input type="checkbox" id="additionalInfo" name="additionalInfo" onclick="toggleAdditionalInfo()" required>
+      Support education research by providing additional information
+    </h4>
+    
+    <div id="additionalInfoContainer" class="additional-info">
+      <label for="additionalText">Gender</label>
+      <input type="text" placeholder="Gender (Optional)" id="additionalText" name="additionalText">
+      <label for="additionalText">Year of birth</label>
+      <input type="text" placeholder="Year of birth (Optional)" id="additionalText" name="additionalText">
+      <label for="additionalText">Highest level of education completed</label>
+      <input type="text" placeholder="Highest level of education completed (Optional)" id="additionalText" name="additionalText">
+      <label for="additionalText">Tell us why you're interested in Cloudswyft</label>
+      <input type="text" placeholder="Tell us why you're interested in Cloudswyft (Optional)" id="additionalText" name="additionalText">
+    </div>
+    
+    <input type="submit" value="Create Account">
+  </form>
+</body>
+</html>

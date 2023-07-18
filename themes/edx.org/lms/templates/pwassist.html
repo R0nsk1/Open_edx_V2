@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Assistance</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 100px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #11155c;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666666;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #11155c;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-group p {
+      font-size: 14px;
+      color: #666666;
+      margin-top: 5px;
+    }
+
+    .btn-recover {
+      background-color: #3429ca;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-recover:hover {
+      background-color: #11155c;
+    }
+
+    a {
+      color: #11155c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #f5f5f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #11155c;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Password Assistance</h2>
+    <p>Please enter your log-in or recovery email address below, and we will send you an email with instructions.</p>
+    
+    <form action="" method="POST">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="username@domain.com" required>
+      </div>
+      <div class="form-group">
+        <p>The email address you used to register with Cloudswyft</p>
+      </div>
+      <p><a href="register.html">Need other help signing in? </a></p>
+      <div class="form-group">
+        <input type="submit" value="Recover my password" class="btn btn-recover">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

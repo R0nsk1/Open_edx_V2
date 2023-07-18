@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #11155c;
+    }
+
+    a {
+      color: #11155c;
+      text-decoration: none;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #11155c;
+      font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #3429ca;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #11155c;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #11155c;
+      margin-top: 20px;
+      text-align: center;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #f5f5f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #11155c;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h3>First time here? <a href="register.html">Create an Account</a></h3>
+  <form action="#" method="post">
+    <h2>Sign in here using your email address and password.</h2>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    
+    <p><a href="pwassist.html">Need help signing in?</a></p>
+    
+    <h2>Sign in with your company or school</h2>
+    
+    <input type="submit" value="Sign In">
+  </form>
+</body>
+</html>
